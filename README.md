@@ -2,7 +2,7 @@
 
 ##Requirements
 
-- Python 2.7
+- Python 3
 
 ##Install Test Site on OSX
 - Make sure you've installed Homebrew
