@@ -13,6 +13,7 @@
 - virtualenv -p /usr/local/bin/python3 dwc
 - cd dwc 
 - source bin/activate
+- Add a SECRET_KEY = '' to dwc/settings/secrets.py
 - pip install -r requirements.txt
 - python manage.py makemigrations
 - python manage.py migrate
