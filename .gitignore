@@ -5,8 +5,11 @@ bin/*
 /.venv/
 /*/settings/local.py
 /static/
+/dwc/static
 /media/
 /.vagrant/
 Vagrantfile.local
 /docs/_build/
-/db.sqlite3
+db.sqlite3
+pip-selfcheck.json
+/include

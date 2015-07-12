@@ -1,39 +1,57 @@
 {% load compress static wagtailuserbar %}
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_suffix %}{% endblock %}</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_suffix %}{% endblock %}</title>
 
-        {% compress css %}
-            
-            <link rel="stylesheet" type="text/css" href="{% static 'css/cms.css' %}">
-        {% endcompress %}
+    {% compress css %}
+      <link rel="stylesheet" media="all" href="{% static 'css/normalize.css' %}">
+      <link rel="stylesheet" media="all" href="{% static 'css/stylesheet.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/cms.css' %}">
+    {% endcompress %}
 
-        {% block extra_css %}
-            
-        {% endblock %}
-    </head>
+    {% block extra_css %}{% endblock %}
+  </head>
 
-    <body class="{% block body_class %}{% endblock %}">
-        {% wagtailuserbar %}
-
+  <body class="{% block body_class %}{% endblock %}">
+    {% wagtailuserbar %}
+    <header class="header">
+      <h1 id="logo"><a href="#">Tech Workers Coalition</a></h1>
+      <ul class="supporting-links">
+        <li><a href="#">@techworkersco</a></li>
+        <li><a href="#">Mailing List</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <section>
         {% block content %}{% endblock %}
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <h2>Interested?</h2>
+        <p>Join our mailing list or follow us on Twitter to stay informed about the issues that impact your city and learn ways that you can help.
+        </p>
+        <ul>
+          <li><a href="#">Follow us @techworkersco</a>
+          <li><a href="#">Join our mailing list</a>
+          <li><a href="#">Contact us</a>
+        </ul>
+      </div>
+    </footer>
+    {% compress js %}
 
-        {% compress js %}
-            
-            <script type="text/javascript" src="{% static 'js/cms.js' %}"></script>
-        {% endcompress %}
+    <script type="text/javascript" src="{% static 'js/cms.js' %}"></script>
+    {% endcompress %}
 
-        {% block extra_js %}
-            
-        {% endblock %}
-    </body>
+    {% block extra_js %}
+
+    {% endblock %}
+  </body>
 </html>
