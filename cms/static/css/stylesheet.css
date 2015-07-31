@@ -180,26 +180,24 @@ main,
 
 @font-face {
     font-family: 'Lil Grotesk';
-    src: url('/fonts/lil-grotesk/lilgrotesk-bold-webfont.eot');
-    src: url('/fonts/lil-grotesk/lilgrotesk-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/lil-grotesk/lilgrotesk-bold-webfont.woff2') format('woff2'),
-         url('/fonts/lil-grotesk/lilgrotesk-bold-webfont.woff') format('woff'),
-         url('/fonts/lil-grotesk/lilgrotesk-bold-webfont.ttf') format('truetype'),
-         url('/fonts/lil-grotesk/lilgrotesk-bold-webfont.svg#lilgroteskbold') format('svg');
+    src: url('/static/fonts/lil-grotesk/lilgrotesk-bold-webfont.eot');
+    src: url('/static/fonts/lil-grotesk/lilgrotesk-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/lil-grotesk/lilgrotesk-bold-webfont.woff2') format('woff2'),
+         url('/static/fonts/lil-grotesk/lilgrotesk-bold-webfont.woff') format('woff'),
+         url('/static/fonts/lil-grotesk/lilgrotesk-bold-webfont.ttf') format('truetype'),
+         url('/static/fonts/lil-grotesk/lilgrotesk-bold-webfont.svg#lilgroteskbold') format('svg');
     font-weight: bold;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'Lil Grotesk';
-    src: url('/fonts/lil-grotesk/lilgrotesk-regular-webfont.eot');
-    src: url('/fonts/lil-grotesk/lilgrotesk-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/lil-grotesk/lilgrotesk-regular-webfont.woff2') format('woff2'),
-         url('/fonts/lil-grotesk/lilgrotesk-regular-webfont.woff') format('woff'),
-         url('/fonts/lil-grotesk/lilgrotesk-regular-webfont.ttf') format('truetype'),
-         url('/fonts/lil-grotesk/lilgrotesk-regular-webfont.svg#lilgroteskregular') format('svg');
+    src: url('/static/fonts/lil-grotesk/lilgrotesk-regular-webfont.eot');
+    src: url('/static/fonts/lil-grotesk/lilgrotesk-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/lil-grotesk/lilgrotesk-regular-webfont.woff2') format('woff2'),
+         url('/static/fonts/lil-grotesk/lilgrotesk-regular-webfont.woff') format('woff'),
+         url('/static/fonts/lil-grotesk/lilgrotesk-regular-webfont.ttf') format('truetype'),
+         url('/static/fonts/lil-grotesk/lilgrotesk-regular-webfont.svg#lilgroteskregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
