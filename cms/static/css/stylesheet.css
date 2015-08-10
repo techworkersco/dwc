@@ -11,26 +11,40 @@ white: #fffff7
 */
 
 body { 
-  background-color: #FFF538;
-  color: #000f0f;
+  background-color: #003635;
+  color: #fffff7;
 }
 
 .header-main-wrapper {
   background-color: #fffff7;
+  color: #000f0f;
 }
 
 h1,
 h2,
 h3,
 h4 {
+  color: #FFF538;
+}
+
+.header-main-wrapper h1,
+.header-main-wrapper h2, 
+.header-main-wrapper h3,
+.header-main-wrapper h4 {
   color: #003635;
 }
 
-a:link { color: #003635; }
-a:visited { color: #003635; }
-a:hover { color: #003635; }
-a:focus { color: #003635; }
-a:active { color: #003635; }
+a:link { color: #FFF538; }
+a:visited { color: #FFF538; }
+a:hover { color: #FFF538; }
+a:focus { color: #FFF538; }
+a:active { color: #FFF538; }
+
+.header-main-wrapper a:link { color: #003635; }
+.header-main-wrapper a:visited { color: #003635; }
+.header-main-wrapper a:hover { color: #003635; }
+.header-main-wrapper a:focus { color: #003635; }
+.header-main-wrapper a:active { color: #003635; }
 
 /* layout */
 body {
