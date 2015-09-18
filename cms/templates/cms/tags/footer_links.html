@@ -1,0 +1,7 @@
+{% load core_tags %}
+
+<ul>
+{% for link in footer_links %}
+    <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+{% endfor %}
+</ul>

@@ -1,0 +1,5 @@
+{% load core_tags wagtailcore_tags %}
+
+{% for block in footer_copy_blocks %}
+    {{ block.body|richtext }}
+{% endfor %}
