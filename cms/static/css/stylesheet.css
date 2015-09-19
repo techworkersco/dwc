@@ -173,15 +173,16 @@ footer {
 } /* media query: 620 */
 
 @media screen and (max-width: 420px) {
-  body {
-    /*font-size: .9em;*/
-  }
+  h1 { font-size: 1.96875em;  /* 2.25 * .875 */ }
+  h2 { font-size: 1.3125em;   /* 1.5 * .875 */ }
+  h3 { font-size: 1.09375em; /* 1.25 * .875 */ }
+  h4 { font-size: 0.765625em; font-style: italic; /* .875 * .875 */ }
 
-header,
-main,
-.footer-content {
-  padding: .75em;
-}
+  header,
+  main,
+  .footer-content {
+    padding: .75em;
+  }
 
   #logo {
     background-size: cover;

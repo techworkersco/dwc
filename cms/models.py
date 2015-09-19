@@ -15,6 +15,9 @@ class HomePage(Page):
         FieldPanel('body', classname="full"),
     ]
 
+class EmailSignUpPage(Page):
+    pass
+
 class AbstractLink(models.Model):
     url = models.CharField(null=False, blank=False, max_length=2048)
     text = models.CharField(max_length=255)
