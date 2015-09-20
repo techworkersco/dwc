@@ -8,14 +8,20 @@ from wagtail.wagtailadmin.edit_handlers import FieldPanel
 from wagtail.wagtailsnippets.models import register_snippet
 
 
-class HomePage(Page):
+class AbstractPage(models.Model):
     body = RichTextField(default='')
 
     content_panels = Page.content_panels + [
         FieldPanel('body', classname="full"),
     ]
 
-class EmailSignUpPage(Page):
+    class Meta:
+        abstract = True
+
+class HomePage(AbstractPage, Page):
+    pass
+
+class EmailSignUpPage(AbstractPage, Page):
     pass
 
 class AbstractLink(models.Model):

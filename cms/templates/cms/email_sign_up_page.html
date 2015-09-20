@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% load wagtailcore_tags %}
+
 {% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
 
 {% block extra_css %}
@@ -42,6 +44,8 @@
 
 {% block content %}
 <h1>{{ self.title }}</h1>
+
+{{ self.body|richtext }}
 
 <div id="mc_embed_signup">
 <form action="//techworkerscoalition.us11.list-manage.com/subscribe/post?u=194e57c175176cfd13007a197&amp;id=7cb85d276a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
