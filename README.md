@@ -1,3 +1,5 @@
+**NOTE: this is no longer the repo for the twc site. Please checkout https://github.com/techworkersco/twc-site if you would like to contribute or file an issue.**
+
 #Tech Worker Coalition's Site
 
 ##Requirements
