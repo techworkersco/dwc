@@ -8,7 +8,7 @@ django-redis==3.8.2
 django-sendfile==0.3.7
 django-taggit==0.18.3
 django-treebeard==3.0
-djangorestframework==3.5.1
+djangorestframework==3.11.2
 elasticsearch==1.1.1
 greenlet==0.4.7
 gunicorn==19.3.0
